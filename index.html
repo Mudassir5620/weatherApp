@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Your CSS file -->
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <br><br>
+        <h2 id="title" class="app-title">Weather App</h2>
+
+        <!-- Search Bar -->
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name..." id="cityName">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- Weather Card -->
+        <div class="weather-card">
+
+            <h1 class="city">Hyderabad</h1>
+
+            <img 
+                src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png"
+                alt="weather icon"
+                class="weather-icon"
+            >
+
+            <h2 class="temperature">28°C</h2>
+
+            <p class="description">Overcast</p>
+
+            <div class="details">
+
+                <div class="card">
+                    <h3>Wind</h3>
+                    <p class="wind">12 km/h</p>
+                </div>
+
+                <div class="card">
+                    <h3>Humidity</h3>
+                    <p class="humidity">68%</p>
+                </div>
+
+            </div>
+
+            <div class="datetime">
+                <p class="day">Friday</p>
+                <p class="date">15 Nov 2025</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Place JS here so DOM loads first -->
+    <script src="./src/script.js"></script>
+
+</body>
+</html>

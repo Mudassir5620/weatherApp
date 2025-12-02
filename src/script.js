@@ -1,5 +1,5 @@
 // Selecting elements
-console.log("hi i am mudassir");
+console.log("hey i am mudassir ");
 const searchBtn = document.getElementById("searchBtn");
 const input = document.getElementById("cityName");
 const city = document.querySelector(".city");
@@ -45,7 +45,7 @@ async function getWeather(cityName) {
 
         // Update UI
         city.innerHTML = data.name;
-        temperature.innerHTML = data.main.temp + "°C";
+        temperature.innerHTML = Math.round(data.main.temp) + "°C";
         desc.innerHTML = data.weather[0].description;
         wind.innerHTML = data.wind.speed + " km/h";
         humidity.innerHTML = data.main.humidity + "%";
